@@ -13,10 +13,12 @@
 
     function sortBy(e){
        
-        let target = e.target
-        thsArr = makeArray(ths)
+        let target = e.target,
+        thsArr = makeArray(ths),
+        index = thsArr.indexOf(target)
         console.log(target)
         console.log(thsArr)
+        console.log(index)
     }
     for(var i = 0; i < ths.length; i++){
         ths[i].onclick = sortBy;
